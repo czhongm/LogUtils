@@ -47,9 +47,9 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
     implementation 'org.apache.commons:commons-lang3:3.4'
     sourceImplementation project(':library')
     sourceImplementation project(':log2file')

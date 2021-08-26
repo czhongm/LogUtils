@@ -5,8 +5,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode rootProject.ext.android.versionCode
-        versionName rootProject.ext.android.versionName
     }
     buildTypes {
         release {
@@ -21,8 +19,8 @@ android {
 }
 
 dependencies {
-    androidTestImplementation 'junit:junit:4.12'
-    androidTestImplementation 'org.robolectric:robolectric:3.0'
+    androidTestImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'org.robolectric:robolectric:4.2.1'
     androidTestImplementation 'org.assertj:assertj-core:1.7.0'
 //    api project(':export-api')
     api "com.apkfuns.logutils:export-api:${rootProject.ext.exportApi.releaseVersion}"
