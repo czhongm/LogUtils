@@ -1,6 +1,6 @@
 package com.apkfuns.logutils.demo.parse;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.apkfuns.logutils.Parser;
 

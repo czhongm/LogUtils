@@ -1,7 +1,7 @@
 package com.apkfuns.logutils.parser;
 
 import android.os.Message;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.apkfuns.logutils.Parser;
 import com.apkfuns.logutils.utils.ObjectUtil;

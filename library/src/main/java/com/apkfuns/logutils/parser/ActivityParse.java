@@ -1,7 +1,7 @@
 package com.apkfuns.logutils.parser;
 
 import android.app.Activity;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.lang.reflect.Field;
 

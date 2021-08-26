@@ -8,7 +8,7 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.file.versionCode
         versionName rootProject.ext.file.versionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11 -frtti -fexceptions -lz"
@@ -36,4 +36,4 @@ dependencies {
     compileOnly project(':export-api')
 }
 
-apply from: "../gradle/bintrayUpload.gradle"
+//apply from: "../gradle/bintrayUpload.gradle"

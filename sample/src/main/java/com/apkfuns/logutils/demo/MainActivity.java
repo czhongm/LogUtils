@@ -11,12 +11,9 @@ import com.apkfuns.logutils.demo.helper.DataHelper;
 import com.apkfuns.logutils.demo.service.MultiProcessService;
 import com.apkfuns.logutils.demo.utils.ThreadLog;
 
-import hugo.weaving.DebugLog;
-
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    @DebugLog
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

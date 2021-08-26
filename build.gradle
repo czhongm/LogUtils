@@ -1,19 +1,37 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
-        jcenter()
+        maven {
+            url 'https://maven.aliyun.com/repository/central'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        mavenLocal()
+        mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.android.tools.build:gradle:7.0.1'
         classpath 'me.tatarka:gradle-retrolambda:3.2.0'
     }
 }
 allprojects {
     repositories {
-        jcenter()
+        maven {
+            url 'https://maven.aliyun.com/repository/central'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        mavenLocal()
+        mavenCentral()
         maven { url "https://jitpack.io" }
         google()
     }
@@ -21,10 +39,10 @@ allprojects {
 
 ext {
     android = [
-            compileSdkVersion : 27,
-            buildToolsVersion : "27.0.3",
+            compileSdkVersion : 30,
+            buildToolsVersion : "30.0.3",
             minSdkVersion     : 8,
-            targetSdkVersion  : 22,
+            targetSdkVersion  : 30,
             versionCode : 45,
             versionName : "1.7.5",
             releaseVersion: "1.7.5"
@@ -41,20 +59,3 @@ ext {
     ]
 }
 
-// 发布 LogUtil 线上版本
-task publishLogRelease(dependsOn: [':library:bintrayUpload', ':logutils-no-op:bintrayUpload']) {
-    group 'publishing'
-    description 'publish log release version'
-    doLast {
-        println "publishRelease finish"
-    }
-}
-
-// 发布完整线上版本，包含 log2File
-task publishFullRelease(dependsOn: ['publishLogRelease', ':log2file:bintrayUpload']) {
-    group 'publishing'
-    description 'publish full release version (include log2File)'
-    doLast {
-        println "publishFullRelease finish"
-    }
-}

@@ -1,7 +1,7 @@
 package com.apkfuns.log2file;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.apkfuns.logutils.LogLevel;
 import com.apkfuns.logutils.file.LogFileEngine;

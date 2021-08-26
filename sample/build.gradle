@@ -1,16 +1,4 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
-    }
-}
-
 apply plugin: 'com.android.application'
-apply plugin: 'com.jakewharton.hugo'
-
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -59,7 +47,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'androidx.annotation:annotation:1.0.0'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.squareup.okhttp3:okhttp:3.2.0'
     implementation 'org.apache.commons:commons-lang3:3.4'

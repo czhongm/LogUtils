@@ -1,6 +1,6 @@
 package com.apkfuns.logutils;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Created by pengwei on 16/3/8.
