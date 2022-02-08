@@ -41,6 +41,9 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
+                groupId = 'com.github.czhongm'
+                artifactId = 'log2file'
+                version = "${rootProject.ext.file.releaseVersion}"
             }
         }
     }

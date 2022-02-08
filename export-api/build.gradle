@@ -37,6 +37,9 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
+                groupId = 'com.github.czhongm'
+                artifactId = 'export-api'
+                version = "${rootProject.ext.exportApi.releaseVersion}"
             }
         }
     }

@@ -18,8 +18,8 @@ android {
 
 dependencies {
     androidTestImplementation 'junit:junit:4.13.2'
-//    api project(':export-api')
-    api "com.apkfuns.logutils:export-api:${rootProject.ext.exportApi.releaseVersion}"
+    api project(':export-api')
+//    api "com.apkfuns.logutils:export-api:${rootProject.ext.exportApi.releaseVersion}"
 }
 
 project.afterEvaluate {
@@ -27,6 +27,9 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
+                groupId = 'com.github.czhongm'
+                artifactId = 'logutils-no-op'
+                version = "${rootProject.ext.android.releaseVersion}"
             }
         }
     }
