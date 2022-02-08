@@ -51,12 +51,14 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.squareup.okhttp3:okhttp:4.4.1'
     implementation 'org.apache.commons:commons-lang3:3.4'
-    sourceImplementation project(':library')
-    sourceImplementation project(':log2file')
-    sourceNoOpImplementation project(':logutils-no-op')
-    sourceNoOpImplementation project(':log2file')
-    binaryImplementation "com.github.czhongm:library:${rootProject.ext.android.releaseVersion}"
-    binaryImplementation "com.github.czhongm:log2file:${rootProject.ext.file.releaseVersion}"
-    binaryNoOpImplementation "com.github.czhongm:logutils-no-op:${rootProject.ext.android.releaseVersion}"
-    binaryNoOpImplementation "com.github.czhongm:log2file:${rootProject.ext.file.releaseVersion}"
+    implementation project(path: ':log2file')
+    implementation project(path: ':library')
+//    sourceImplementation project(':library')
+//    sourceImplementation project(':log2file')
+//    sourceNoOpImplementation project(':logutils-no-op')
+//    sourceNoOpImplementation project(':log2file')
+//    binaryImplementation "com.github.czhongm:library:${rootProject.ext.android.releaseVersion}"
+//    binaryImplementation "com.github.czhongm:log2file:${rootProject.ext.file.releaseVersion}"
+//    binaryNoOpImplementation "com.github.czhongm:logutils-no-op:${rootProject.ext.android.releaseVersion}"
+//    binaryNoOpImplementation "com.github.czhongm:log2file:${rootProject.ext.file.releaseVersion}"
 }
