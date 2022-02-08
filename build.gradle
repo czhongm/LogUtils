@@ -44,18 +44,18 @@ ext {
             minSdkVersion     : 8,
             targetSdkVersion  : 30,
             versionCode : 45,
-            versionName : "2.0.5",
-            releaseVersion: "2.0.5"
+            versionName : "2.0.6",
+            releaseVersion: "2.0.6"
     ]
     file = [
             versionCode : 6,
-            versionName : "2.0.5",
-            releaseVersion: "2.0.5"
+            versionName : "2.0.6",
+            releaseVersion: "2.0.6"
     ]
     exportApi = [
             versionCode : 10,
-            versionName : "2.0.5",
-            releaseVersion: "2.0.5"
+            versionName : "2.0.6",
+            releaseVersion: "2.0.6"
     ]
 }
 

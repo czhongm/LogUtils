@@ -55,8 +55,8 @@ dependencies {
     sourceImplementation project(':log2file')
     sourceNoOpImplementation project(':logutils-no-op')
     sourceNoOpImplementation project(':log2file')
-    binaryImplementation "com.apkfuns.logutils:library:${rootProject.ext.android.releaseVersion}"
-    binaryImplementation "com.apkfuns.log2file:log2file:${rootProject.ext.file.releaseVersion}"
-    binaryNoOpImplementation "com.apkfuns.logutils:logutils-no-op:${rootProject.ext.android.releaseVersion}"
-    binaryNoOpImplementation "com.apkfuns.log2file:log2file:${rootProject.ext.file.releaseVersion}"
+    binaryImplementation "com.github.czhongm:library:${rootProject.ext.android.releaseVersion}"
+    binaryImplementation "com.github.czhongm:log2file:${rootProject.ext.file.releaseVersion}"
+    binaryNoOpImplementation "com.github.czhongm:logutils-no-op:${rootProject.ext.android.releaseVersion}"
+    binaryNoOpImplementation "com.github.czhongm:log2file:${rootProject.ext.file.releaseVersion}"
 }
