@@ -21,9 +21,6 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
 
     flavorDimensions "compile"
     productFlavors {
@@ -43,6 +40,9 @@ android {
         binaryNoOp {
             dimension "compile"
         }
+    }
+    lint {
+        abortOnError false
     }
 }
 
